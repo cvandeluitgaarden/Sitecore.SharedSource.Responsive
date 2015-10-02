@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {FE8983E0-AE96-402B-91F6-099B3463A024}
+database: master
+path: /sitecore/templates/System/Modules/Responsive/RenderingParameterTemplates/blockgrid
+parent: {0A3C8594-E3BF-4820-B608-1ED964554DC1}
+name: blockgrid
+master: {00000000-0000-0000-0000-000000000000}
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
+
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 194
+
+{8CA06D6A-B353-44E8-BC31-B528C7306971}|{5FCC0670-124B-4FEE-83DD-86E6DA07D312}|{77072ED7-561F-4BB6-B416-E806CADA24D8}|{0610E16B-4D70-4064-9547-25D239478673}|{78857FE6-39D6-413E-8CE6-2AE487075C10}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{24255191-43A8-4AF6-8AC3-87C8572D720F}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 25
+
+business/32x32/column.png
+----version----
+language: en
+version: 1
+revision: 7097d139-83be-4749-a80b-5e481130326b
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151002T175654Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7097d139-83be-4749-a80b-5e481130326b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151002T185458Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

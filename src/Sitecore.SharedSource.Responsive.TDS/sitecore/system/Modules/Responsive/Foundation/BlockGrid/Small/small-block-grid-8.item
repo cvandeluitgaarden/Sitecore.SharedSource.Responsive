@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {E1A6CBB2-A890-4473-8C03-D36E55CA8DC1}
+database: master
+path: /sitecore/system/Modules/Responsive/Foundation/BlockGrid/Small/small-block-grid-8
+parent: {62EDF947-10BC-4993-A354-59685ECDA0D3}
+name: small-block-grid-8
+master: {00000000-0000-0000-0000-000000000000}
+template: {B88EB0BA-69FB-4A84-9DCE-AF1E3C6FAA0C}
+templatekey: StylesheetClass
+
+----version----
+language: en
+version: 1
+revision: 0785f5cc-4cd5-41f0-8022-ca39a2419ed0
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150929T190745Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0785f5cc-4cd5-41f0-8022-ca39a2419ed0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151002T185935Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

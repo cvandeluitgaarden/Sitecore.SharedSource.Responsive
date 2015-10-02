@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {A7259087-676E-432F-8A7B-FDA49D59542F}
+database: master
+path: /sitecore/system/Modules/Responsive/Bootstrap/Grid
+parent: {905B710E-8CB5-4BD4-A212-58B2881E60D6}
+name: Grid
+master: {00000000-0000-0000-0000-000000000000}
+template: {F4EA76B8-A1FE-4D4D-BCD7-B9F91A4D4B66}
+templatekey: StylesheetClassFolder
+
+----version----
+language: en
+version: 1
+revision: 082a3ac0-913e-4e6b-918f-f09596778b80
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150929T191907Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+082a3ac0-913e-4e6b-918f-f09596778b80
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150929T191907Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

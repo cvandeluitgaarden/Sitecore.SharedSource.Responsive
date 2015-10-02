@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.SharedSource.Responsive.TDS", "src\Sitecore.SharedSource.Responsive.TDS\Sitecore.SharedSource.Responsive.TDS.scproj", "{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.Responsive", "src\Sitecore.SharedSource.Responsive\Sitecore.SharedSource.Responsive.csproj", "{BEF333EE-54F2-4A31-A476-BB97C0254AA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AD0E6D-A77F-4F21-98FF-A3FB765184CF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BEF333EE-54F2-4A31-A476-BB97C0254AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF333EE-54F2-4A31-A476-BB97C0254AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF333EE-54F2-4A31-A476-BB97C0254AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF333EE-54F2-4A31-A476-BB97C0254AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

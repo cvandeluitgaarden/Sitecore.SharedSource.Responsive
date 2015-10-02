@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BEF333EE-54F2-4A31-A476-BB97C0254AA8}</ProjectGuid>
+    <ProjectGuid>{ED6CBE7B-5E72-4136-B929-97ABF7421534}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.SharedSource.Responsive</RootNamespace>
-    <AssemblyName>Sitecore.SharedSource.Responsive</AssemblyName>
+    <RootNamespace>Sitecore.SharedSource.Responsive.Demo</RootNamespace>
+    <AssemblyName>Sitecore.SharedSource.Responsive.Demo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -50,6 +55,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
@@ -75,6 +84,10 @@
       <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
       <Private>True</Private>
@@ -98,22 +111,109 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="App_Readme\Foundation for Sites\readme.md" />
+    <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <None Include="Web.config" />
+    <None Include="Properties\PublishProfiles\DEVELOPMENT.pubxml" />
+    <Content Include="Scripts\foundation\fastclick.js" />
+    <Content Include="Scripts\foundation\foundation.abide.js" />
+    <Content Include="Scripts\foundation\foundation.accordion.js" />
+    <Content Include="Scripts\foundation\foundation.alert.js" />
+    <Content Include="Scripts\foundation\foundation.clearing.js" />
+    <Content Include="Scripts\foundation\foundation.dropdown.js" />
+    <Content Include="Scripts\foundation\foundation.equalizer.js" />
+    <Content Include="Scripts\foundation\foundation.interchange.js" />
+    <Content Include="Scripts\foundation\foundation.joyride.js" />
+    <Content Include="Scripts\foundation\foundation.js" />
+    <Content Include="Scripts\foundation\foundation.magellan.js" />
+    <Content Include="Scripts\foundation\foundation.offcanvas.js" />
+    <Content Include="Scripts\foundation\foundation.orbit.js" />
+    <Content Include="Scripts\foundation\foundation.reveal.js" />
+    <Content Include="Scripts\foundation\foundation.slider.js" />
+    <Content Include="Scripts\foundation\foundation.tab.js" />
+    <Content Include="Scripts\foundation\foundation.tooltip.js" />
+    <Content Include="Scripts\foundation\foundation.topbar.js" />
+    <Content Include="Scripts\foundation\jquery.cookie.js" />
+    <None Include="Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.3.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Shared\Layouts\Main.cshtml" />
+    <Content Include="sass\_normalize.scss" />
+    <Content Include="sass\_foundation.scss" />
+    <Content Include="sass\_foundation.mvc.scss" />
+    <Content Include="sass\Site.scss" />
+    <Content Include="sass\foundation\_settings.scss" />
+    <Content Include="sass\foundation\_functions.scss" />
+    <Content Include="sass\foundation\components\_xy-center.scss" />
+    <Content Include="sass\foundation\components\_visibility.scss" />
+    <Content Include="sass\foundation\components\_type.scss" />
+    <Content Include="sass\foundation\components\_top-bar.scss" />
+    <Content Include="sass\foundation\components\_tooltips.scss" />
+    <Content Include="sass\foundation\components\_toolbar.scss" />
+    <Content Include="sass\foundation\components\_thumbs.scss" />
+    <Content Include="sass\foundation\components\_tabs.scss" />
+    <Content Include="sass\foundation\components\_tables.scss" />
+    <Content Include="sass\foundation\components\_switches.scss" />
+    <Content Include="sass\foundation\components\_switch.scss" />
+    <Content Include="sass\foundation\components\_sub-nav.scss" />
+    <Content Include="sass\foundation\components\_split-buttons.scss" />
+    <Content Include="sass\foundation\components\_side-nav.scss" />
+    <Content Include="sass\foundation\components\_reveal.scss" />
+    <Content Include="sass\foundation\components\_reveal-new.scss" />
+    <Content Include="sass\foundation\components\_range-slider.scss" />
+    <Content Include="sass\foundation\components\_progress-bars.scss" />
+    <Content Include="sass\foundation\components\_pricing-tables.scss" />
+    <Content Include="sass\foundation\components\_panels.scss" />
+    <Content Include="sass\foundation\components\_pagination.scss" />
+    <Content Include="sass\foundation\components\_orbit.scss" />
+    <Content Include="sass\foundation\components\_offcanvas.scss" />
+    <Content Include="sass\foundation\components\_magellan.scss" />
+    <Content Include="sass\foundation\components\_labels.scss" />
+    <Content Include="sass\foundation\components\_keystrokes.scss" />
+    <Content Include="sass\foundation\components\_joyride.scss" />
+    <Content Include="sass\foundation\components\_inline-lists.scss" />
+    <Content Include="sass\foundation\components\_iconbar.scss" />
+    <Content Include="sass\foundation\components\_icon-bar.scss" />
+    <Content Include="sass\foundation\components\_grid.scss" />
+    <Content Include="sass\foundation\components\_global.scss" />
+    <Content Include="sass\foundation\components\_forms.scss" />
+    <Content Include="sass\foundation\components\_flex-video.scss" />
+    <Content Include="sass\foundation\components\_dropdown.scss" />
+    <Content Include="sass\foundation\components\_dropdown-buttons.scss" />
+    <Content Include="sass\foundation\components\_clearing.scss" />
+    <Content Include="sass\foundation\components\_buttons.scss" />
+    <Content Include="sass\foundation\components\_button-groups.scss" />
+    <Content Include="sass\foundation\components\_breadcrumbs.scss" />
+    <Content Include="sass\foundation\components\_block-grid.scss" />
+    <Content Include="sass\foundation\components\_alert-boxes.scss" />
+    <Content Include="sass\foundation\components\_accordion.scss" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppConstants.cs" />
-    <Compile Include="Extensions\SitecoreHelperExtensions.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\Bundles\Foundation.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ResponsiveDemoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\DEVELOPMENT.pubxml" />
+    <Content Include="Views\web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\ResponsiveDemo\Column.cshtml" />
+    <Content Include="Scripts\jquery-2.1.3.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -121,7 +221,15 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.SharedSource.Responsive\Sitecore.SharedSource.Responsive.csproj">
+      <Project>{bef333ee-54f2-4a31-a476-bb97c0254aa8}</Project>
+      <Name>Sitecore.SharedSource.Responsive</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -135,9 +243,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>60003</DevelopmentServerPort>
+          <DevelopmentServerPort>63017</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60003/</IISUrl>
+          <IISUrl>http://localhost:63017/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

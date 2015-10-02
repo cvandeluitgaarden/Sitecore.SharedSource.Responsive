@@ -29,7 +29,7 @@
 
         private static IEnumerable<string> GetRenderingResponsiveFieldNames(Rendering currentRendering)
         {
-            IEnumerable<string> fields = null;
+            IEnumerable<string> fields = new string[] { };
             ReferenceField parameterTemplateField = currentRendering.Item.Fields[AppConstants.ParameterTemplateName];
             if (parameterTemplateField != null && parameterTemplateField.TargetItem != null)
             {

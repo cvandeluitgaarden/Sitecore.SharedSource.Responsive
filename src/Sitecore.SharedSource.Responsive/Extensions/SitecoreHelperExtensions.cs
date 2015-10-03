@@ -51,24 +51,5 @@
         {
             return sitecoreHelper.EditorLabel(sitecoreHelper.CurrentRendering.RenderingItem.DisplayName);
         }
-
-        private static IEnumerable<string> GetRenderingResponsiveFieldNames(Rendering currentRendering)
-        {
-            IEnumerable<string> fields = new string[] { };
-
-            Item renderingItem = Sitecore.Context.Database.GetItem(currentRendering.RenderingItem.ID);
-
-            ReferenceField parameterTemplateField = renderingItem.Fields[AppConstants.ParameterTemplateName];
-            if (parameterTemplateField != null && parameterTemplateField.TargetItem != null)
-            {
-                var templateItem = Context.Database.GetTemplate(parameterTemplateField.TargetID);
-
-                fields = templateItem.Fields.Where(field => AppConstants.ResponsiveSectionNames
-                    .Contains(field.Section.Name, StringComparer.OrdinalIgnoreCase))
-                    .Select(x => x.Name);
-            }
-
-            return fields;
-        }
     }
 }

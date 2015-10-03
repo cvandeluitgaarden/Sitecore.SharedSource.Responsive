@@ -17,6 +17,6 @@
             "Visibility"
         };
 
-        public static readonly string ParameterTemplateName = "Parameters template";
+        public static readonly string ParametersTemplateFieldName = "Parameters template";
     }
 }

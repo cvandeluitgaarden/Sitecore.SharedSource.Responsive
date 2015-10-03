@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
+    <Content Include="Layouts\Main.aspx" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\DEVELOPMENT.pubxml" />
     <Content Include="Scripts\foundation\fastclick.js" />
@@ -143,6 +144,7 @@
     <Content Include="Scripts\jquery-2.1.3.js" />
     <Content Include="Scripts\jquery-2.1.3.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Sublayouts\Column.ascx" />
     <Content Include="Views\Shared\Layouts\Main.cshtml" />
     <Content Include="sass\_normalize.scss" />
     <Content Include="sass\_foundation.scss" />
@@ -197,7 +199,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ResponsiveDemoController.cs" />
+    <Compile Include="Layouts\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sublayouts\Column.ascx.cs">
+      <DependentUpon>Column.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sublayouts\Column.ascx.designer.cs">
+      <DependentUpon>Column.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

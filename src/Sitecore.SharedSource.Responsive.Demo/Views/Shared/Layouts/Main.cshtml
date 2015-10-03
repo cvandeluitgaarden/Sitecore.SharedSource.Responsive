@@ -1,3 +1,16 @@
-﻿<div class="row">
-    @Html.Sitecore().Placeholder("phMain")
-</div>
+﻿<html>
+<head>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="row">
+        @Html.Sitecore().Placeholder("phMain")
+    </div>
+    
+    <script src="~/Scripts/foundation/foundation.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+</body>
+</html>

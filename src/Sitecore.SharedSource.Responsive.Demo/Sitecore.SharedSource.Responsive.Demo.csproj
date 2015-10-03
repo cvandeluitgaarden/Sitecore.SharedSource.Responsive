@@ -118,8 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
-    <Content Include="App_Readme\Foundation for Sites\readme.md" />
-    <Content Include="Global.asax" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\DEVELOPMENT.pubxml" />
     <Content Include="Scripts\foundation\fastclick.js" />
@@ -195,23 +193,14 @@
     <Content Include="sass\foundation\components\_block-grid.scss" />
     <Content Include="sass\foundation\components\_alert-boxes.scss" />
     <Content Include="sass\foundation\components\_accordion.scss" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\Bundles\Foundation.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ResponsiveDemoController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\ResponsiveDemo\Column.cshtml" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
     <None Include="Web.Debug.config">

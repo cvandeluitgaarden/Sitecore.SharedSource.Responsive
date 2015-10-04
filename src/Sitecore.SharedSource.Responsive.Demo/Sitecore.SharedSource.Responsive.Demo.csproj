@@ -120,6 +120,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Layouts\Main.aspx" />
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\Sitecore.SharedSource.Responsive.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Properties\PublishProfiles\DEVELOPMENT.pubxml" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />

@@ -100,12 +100,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Include\Sitecore.SharedSource.Responsive.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Global.asax" />
     <Content Include="packages.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConstants.cs" />
+    <Compile Include="Configuration.cs" />
     <Compile Include="Extensions\SitecoreHelperExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -21,6 +21,8 @@
 
         public static HtmlString ResponsiveClasses(Sitecore.Mvc.Presentation.Rendering rendering)
         {
+            var config = new Configuration();
+
             return new HtmlString(ResponsiveClasses(rendering.Parameters, rendering.RenderingItem.ID));
         }
 
@@ -50,10 +52,11 @@
                 return new string[] { };
             }
 
+            var config = new Configuration();
             var templateItem = Context.Database.GetTemplate(renderingParameterTemplate.TargetID);
-            return templateItem.Fields.Where(field => AppConstants.ResponsiveSectionNames
-            .Contains(field.Section.Name, StringComparer.OrdinalIgnoreCase))
-            .Select(field => field.Name);
+            return templateItem.Fields
+                .Where(field => config.Fields.Contains(field.ID))
+                .Select(field => field.Name);
         }
     }
 }

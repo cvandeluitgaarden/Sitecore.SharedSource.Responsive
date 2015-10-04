@@ -2,27 +2,31 @@
 {
     using Sitecore.Data.Fields;
     using Web.UI.WebControls;
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Web.UI;
     using Data;
     using System.Web;
+    using Data.Items;
+    using Layouts;
 
     public static class RenderingHelper
     {
         public static string ResponsiveClasses(Control control)
         {
             var sublayout = control.Parent as Sublayout;
-            var renderings = Sitecore.Context.Item.Visualization.GetRenderings(Sitecore.Context.Device, true);
-            var rendering = renderings.FirstOrDefault(r => r.RenderingItem.InnerItem["Path"] == sublayout.Path);
+            var rendering = GetRenderingItem(sublayout);
             return ResponsiveClasses(sublayout.ParametersDictionary, rendering.RenderingID);
+        }
+
+        public static RenderingReference GetRenderingItem(Sublayout sublayout)
+        {
+            var renderings = Sitecore.Context.Item.Visualization.GetRenderings(Sitecore.Context.Device, true);
+            return renderings.FirstOrDefault(r => r.RenderingItem.InnerItem["Path"] == sublayout.Path);
         }
 
         public static HtmlString ResponsiveClasses(Sitecore.Mvc.Presentation.Rendering rendering)
         {
-            var config = new Configuration();
-
             return new HtmlString(ResponsiveClasses(rendering.Parameters, rendering.RenderingItem.ID));
         }
 

@@ -11,7 +11,7 @@ namespace Sitecore.SharedSource.Responsive.Demo.Sublayouts
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            label.Control = this;
         }
     }
 }

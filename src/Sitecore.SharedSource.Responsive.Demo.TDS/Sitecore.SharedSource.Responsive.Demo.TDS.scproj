@@ -19,6 +19,9 @@
     <AssemblyName>Sitecore.SharedSource.Responsive.Demo.TDS</AssemblyName>
     <Name>Sitecore.SharedSource.Responsive.Demo.TDS</Name>
     <RootNamespace>Sitecore.SharedSource.Responsive.Demo.TDS</RootNamespace>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,6 +36,18 @@
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Sitecore.SharedSource.Responsive.Demo</PackageName>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>True</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <PackageAuthor>Christian van de Luitgaarden</PackageAuthor>
+    <PackagePublisher>
+    </PackagePublisher>
+    <PackageReadme>
+    </PackageReadme>
+    <PackageVersion>1</PackageVersion>
+    <SitecoreAssemblyPath>E:\Websites\www.aeres.nl.dev\Website\bin</SitecoreAssemblyPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
@@ -103,6 +118,12 @@
       <ExcludeItemFrom>
       </ExcludeItemFrom>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.SharedSource.Responsive\Sitecore.SharedSource.Responsive.csproj">
+      <Project>{bef333ee-54f2-4a31-a476-bb97c0254aa8}</Project>
+      <Name>Sitecore.SharedSource.Responsive</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
 </Project>

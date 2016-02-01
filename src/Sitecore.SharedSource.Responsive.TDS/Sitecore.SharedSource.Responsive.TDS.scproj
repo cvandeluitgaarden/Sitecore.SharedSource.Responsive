@@ -34,11 +34,38 @@
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Sitecore.SharedSource.Responsive.TDS_Debug.xml</ValidationSettingsFilePath>
     <DisableFileDeployment>False</DisableFileDeployment>
+    <PackageName>Sitecore.SharedSource.Responsive.TDS</PackageName>
+    <GeneratePackage>False</GeneratePackage>
+    <SeperateFilesAndItems>True</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>True</AddDateTimeToPackageName>
+    <PackageAuthor>Christian van de Luitgaarden</PackageAuthor>
+    <PackagePublisher>
+    </PackagePublisher>
+    <PackageReadme>
+    </PackageReadme>
+    <PackageVersion>
+    </PackageVersion>
+    <SitecoreAssemblyPath>E:\Websites\www.aeres.nl.dev\Website\bin</SitecoreAssemblyPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Sitecore.SharedSource.Responsive.TDS_Release.xml</ValidationSettingsFilePath>
+    <PackageName>Sitecore.SharedSource.Responsive</PackageName>
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
+    <PackageAuthor>Christian van de Luitgaarden</PackageAuthor>
+    <PackagePublisher>
+    </PackagePublisher>
+    <PackageReadme>
+    </PackageReadme>
+    <PackageVersion>1</PackageVersion>
+    <SitecoreAssemblyPath>E:\Websites\www.aeres.nl.dev\Website\bin</SitecoreAssemblyPath>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

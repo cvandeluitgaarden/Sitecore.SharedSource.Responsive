@@ -27,8 +27,10 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>E:\Websites\www.aeres.nl.dev\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://www.aeres.nl.dev</SitecoreWebUrl>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
     <SitecoreAccessGuid>f5465844-5f53-4136-9a52-920eb941dbfc</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <EnableValidations>False</EnableValidations>
@@ -54,18 +56,53 @@
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Sitecore.SharedSource.Responsive.TDS_Release.xml</ValidationSettingsFilePath>
-    <PackageName>Sitecore.SharedSource.Responsive</PackageName>
-    <GeneratePackage>True</GeneratePackage>
+    <PackageName>
+    </PackageName>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>False</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
-    <PackageAuthor>Christian van de Luitgaarden</PackageAuthor>
+    <PackageAuthor>
+    </PackageAuthor>
     <PackagePublisher>
     </PackagePublisher>
     <PackageReadme>
     </PackageReadme>
-    <PackageVersion>1</PackageVersion>
+    <PackageVersion>
+    </PackageVersion>
     <SitecoreAssemblyPath>E:\Websites\www.aeres.nl.dev\Website\bin</SitecoreAssemblyPath>
+    <NuGetGenerateNuGetPackage>False</NuGetGenerateNuGetPackage>
+    <NuGetRequireLicenseAcceptance>False</NuGetRequireLicenseAcceptance>
+    <NuGetSummary>
+    </NuGetSummary>
+    <NuGetExePath>
+    </NuGetExePath>
+    <NuGetDescription>
+    </NuGetDescription>
+    <NuGetTitle>
+    </NuGetTitle>
+    <NuGetVersion>
+    </NuGetVersion>
+    <NuGetPackageId>
+    </NuGetPackageId>
+    <NuGetAuthors>
+    </NuGetAuthors>
+    <NuGetOwners>
+    </NuGetOwners>
+    <NuGetCopyright>
+    </NuGetCopyright>
+    <NuGetLicenseUrl>
+    </NuGetLicenseUrl>
+    <NuGetIconUrl>
+    </NuGetIconUrl>
+    <NuGetProjectUrl>
+    </NuGetProjectUrl>
+    <NuGetTags>
+    </NuGetTags>
+    <NuGetReleaseNotes>
+    </NuGetReleaseNotes>
+    <NuGetLanguage>
+    </NuGetLanguage>
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">

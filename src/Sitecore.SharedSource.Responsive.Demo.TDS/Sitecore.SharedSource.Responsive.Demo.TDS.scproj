@@ -27,26 +27,32 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <SitecoreDeployFolder>E:\Websites\www.aeres.nl.dev\Website</SitecoreDeployFolder>
-    <SitecoreWebUrl>http://www.aeres.nl.dev</SitecoreWebUrl>
+    <SitecoreDeployFolder>
+    </SitecoreDeployFolder>
+    <SitecoreWebUrl>
+    </SitecoreWebUrl>
     <SitecoreAccessGuid>f5465844-5f53-4136-9a52-920eb941dbfc</SitecoreAccessGuid>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
     <OutputPath>.\bin\Release\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
-    <PackageName>Sitecore.SharedSource.Responsive.Demo</PackageName>
-    <GeneratePackage>True</GeneratePackage>
+    <PackageName>
+    </PackageName>
+    <GeneratePackage>False</GeneratePackage>
     <SeperateFilesAndItems>False</SeperateFilesAndItems>
     <PackageExcludeCode>True</PackageExcludeCode>
     <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
-    <PackageAuthor>Christian van de Luitgaarden</PackageAuthor>
+    <PackageAuthor>
+    </PackageAuthor>
     <PackagePublisher>
     </PackagePublisher>
     <PackageReadme>
     </PackageReadme>
-    <PackageVersion>1</PackageVersion>
+    <PackageVersion>
+    </PackageVersion>
     <SitecoreAssemblyPath>E:\Websites\www.aeres.nl.dev\Website\bin</SitecoreAssemblyPath>
   </PropertyGroup>
   <ItemGroup>

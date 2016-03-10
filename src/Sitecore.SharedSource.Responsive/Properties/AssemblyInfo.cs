@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Module for managing Zurb Foundation classes in the Sitecore Page/Experience editor")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Christian van de Luitgaarden")]
-[assembly: AssemblyProduct("Sitecore Responsive Module for Zurb Foundation")]
+[assembly: AssemblyProduct("Zurb Foundation responsive module for Sitecore")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 //
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("1.0.0.*")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.*")]
+[assembly: AssemblyFileVersion("1.0.1.0")]

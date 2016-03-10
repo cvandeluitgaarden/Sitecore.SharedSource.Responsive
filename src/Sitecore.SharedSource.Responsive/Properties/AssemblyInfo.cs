@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Sitecore.SharedSource.Responsive")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Module for managing Zurb Foundation classes in the Sitecore Page/Experience editor")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sitecore.SharedSource.Responsive")]
+[assembly: AssemblyCompany("Christian van de Luitgaarden")]
+[assembly: AssemblyProduct("Sitecore Responsive Module for Zurb Foundation")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -2,8 +2,6 @@
 {
     using Mvc.Helpers;
     using System.Web;
-    using System.Linq;
-    using System.Collections.Generic;
     using System.Web.Mvc;
 
     public static class SitecoreHelperExtensions

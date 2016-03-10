@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Module for managing Zurb Foundation classes in the Sitecore Page/Experience editor")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Christian van de Luitgaarden")]
-[assembly: AssemblyProduct("Sitecore Responsive Module for Zurb Foundation")]
+[assembly: AssemblyProduct("Zurb Foundation responsive module for Sitecore")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

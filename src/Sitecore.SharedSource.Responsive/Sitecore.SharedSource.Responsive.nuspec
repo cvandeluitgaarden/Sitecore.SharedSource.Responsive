@@ -8,7 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://github.com/cvandeluitgaarden/Sitecore.SharedSource.Responsive</projectUrl>
-    <iconUrl>https://github.com/cvandeluitgaarden/Sitecore.SharedSource.Responsive/tree/master/resources/nuget</iconUrl>
+    <iconUrl>https://github.com/cvandeluitgaarden/Sitecore.SharedSource.Responsive/blob/master/resources/nuget/sitecore-logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>

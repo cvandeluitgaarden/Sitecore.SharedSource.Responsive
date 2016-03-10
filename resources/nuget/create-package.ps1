@@ -1,0 +1,1 @@
+nuget pack ..\..\src\Sitecore.SharedSource.Responsive\Sitecore.SharedSource.Responsive.csproj -OutputDirectory "Release"

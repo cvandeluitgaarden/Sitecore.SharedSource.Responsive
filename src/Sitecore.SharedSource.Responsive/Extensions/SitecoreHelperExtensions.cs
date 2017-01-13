@@ -14,7 +14,7 @@
         public static HtmlString EditorLabel(this SitecoreHelper sitecoreHelper, string name)
         {
             HtmlString label;
-            if (Sitecore.Context.PageMode.IsPageEditor)
+            if (Sitecore.Context.PageMode.IsExperienceEditor)
             {
                 var tag = new TagBuilder("span");
                 tag.AddCssClass("label");

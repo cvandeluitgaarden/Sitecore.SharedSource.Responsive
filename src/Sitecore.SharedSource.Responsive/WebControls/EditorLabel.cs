@@ -1,6 +1,6 @@
 ﻿namespace Sitecore.SharedSource.Responsive.WebControls
 {
-    using Web.UI.WebControls;
+    using Sitecore.Web.UI.WebControls;
     using System.Web.UI;
     using System.Web.UI.WebControls;
 
@@ -28,6 +28,10 @@
 
         public EditorLabel() : base(HtmlTextWriterTag.Span)
         {
+            if (!Sitecore.Context.PageMode.IsExperienceEditor)
+            {
+                this.Visible = false;
+            }
         }
 
         protected override void AddAttributesToRender(HtmlTextWriter writer)

@@ -7,7 +7,6 @@
     using System.Web.UI;
     using Data;
     using System.Web;
-    using Data.Items;
     using Layouts;
 
     public static class RenderingHelper
@@ -21,8 +20,8 @@
 
         public static RenderingReference GetRenderingItem(Sublayout sublayout)
         {
-            var renderings = Sitecore.Context.Item.Visualization.GetRenderings(Sitecore.Context.Device, true);
-            return renderings.FirstOrDefault(r => r.RenderingItem.InnerItem["Path"] == sublayout.Path);
+            var renderings = Sitecore.Context.Page.Renderings;
+            return renderings.FirstOrDefault(r => r.RenderingItem.InnerItem["Path"].Equals(sublayout.Path));
         }
 
         public static HtmlString ResponsiveClasses(Sitecore.Mvc.Presentation.Rendering rendering)
@@ -30,10 +29,11 @@
             return new HtmlString(ResponsiveClasses(rendering.Parameters, rendering.RenderingItem.ID));
         }
 
-        public static string ResponsiveClasses(IEnumerable<KeyValuePair<string,string>> parameters, ID renderingId)
+        public static string ResponsiveClasses(IEnumerable<KeyValuePair<string, string>> parameters, ID renderingId)
         {
             List<string> classes = new List<string>();
-            foreach (string parameterKey in GetRenderingResponsiveFieldNames(renderingId))
+            var fieldNames = GetRenderingResponsiveFieldNames(renderingId);
+            foreach (string parameterKey in fieldNames)
             {
                 string value = parameters.Where(parameter => parameter.Key.Equals(parameterKey))
                     .Select(parameter => parameter.Value).FirstOrDefault();
@@ -51,7 +51,7 @@
         {
             var renderingItem = Context.Database.GetItem(renderingId);
             ReferenceField renderingParameterTemplate = renderingItem.Fields[AppConstants.ParametersTemplateFieldName];
-            if(renderingParameterTemplate == null || renderingParameterTemplate.TargetItem == null)
+            if (renderingParameterTemplate == null || renderingParameterTemplate.TargetItem == null)
             {
                 return new string[] { };
             }
